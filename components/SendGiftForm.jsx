@@ -17,7 +17,7 @@ const SendGiftForm = ({ selectedItem, setSelectedItems, onSendGift }) => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await fetch("/api/users");
+      const response = await fetch(`/api/users?v=${Math.random()}`);
       const data = await response.json();
       console.log("Returned data are:", data);
       setusers(data);
@@ -127,7 +127,7 @@ const SendGiftForm = ({ selectedItem, setSelectedItems, onSendGift }) => {
                   className=" p-1 bg-amber-500 text-white rounded-md hover:bg-amber-600"
                   onClick={handleSendGift}
                 >
-                  send
+                  otilo
                 </button>
         </div>
       </Listbox>

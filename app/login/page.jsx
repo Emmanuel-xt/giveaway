@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -53,7 +53,7 @@ const Login = ({ onRegister }) => {
           <button type="submit">Login</button>
         </form>
         <p className="text-white text-sm font-thin">
-          have'nt Registered yet ?
+          have&apos;nt Registered yet ?{" "}
           <Link href="./signin">
             <span className="font-bold text-green-600">Register Now</span>
           </Link>

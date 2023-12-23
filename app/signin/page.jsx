@@ -48,7 +48,7 @@ const Signin = () => {
 
   return (
     <div className="signin flex items-center justify-center p-5">
-      <Image src={"/assets/fxmax.png"} width={200} height={200} />
+      <Image src={"/assets/fxmax.png"} width={200} height={200} alt="fxmax"/>
 
       <div className="flex flex-col gap-5">
         <h1 className="text-white font-bold text-2xl">

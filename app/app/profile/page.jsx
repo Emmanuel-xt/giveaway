@@ -3,7 +3,7 @@
 import RecipientProfile from "@components/RecipientProfile";
 import { useSession } from "next-auth/react";
 
-const page = () => {
+const Page = () => {
   const { data: session } = useSession();
   return (
     <div className="scro flex flex-col p-4 py-8  justify-center items-center landing h-screen text-white">
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

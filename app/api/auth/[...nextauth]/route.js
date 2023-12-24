@@ -2,6 +2,7 @@ import { connectToDB } from "@utils/database";
 import User from "@models/Users";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { clearCachedUsers } from "@app/api/cache";
 
 const handler = NextAuth({
   session: {
@@ -46,6 +47,8 @@ const handler = NextAuth({
           await newUser.save();
 
           console.log("User created successfully", newUser);
+
+          clearCachedUsers()
 
           return newUser;
         } catch (error) {

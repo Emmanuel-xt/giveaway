@@ -5,7 +5,7 @@ import React from "react";
 const Home = () => {
   return (
     <section className="landing flex flex-col items-center justify-center gap-10 ">
-      <h1 className="text-white text-4xl font-bold">
+      <h1 className="text-white text-center text-4xl font-bold">
         Christmax Gift Exchange
       </h1>
       <h3 className="text-2xl text-green-300">Celebrate the Christ Season of Giving</h3>

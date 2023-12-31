@@ -45,7 +45,7 @@ const AppPage = () => {
   // }
   return (
     <section className="app  w-screen h-screen">
-      <div className=""> <p className="text-center font-bold text-2xl text-green-700"> Hi {session?.user.name} , Gift A fellow Techi Now</p></div>
+      <div className=""> <p className="text-center font-bold text-2xl text-green-700"> Hi {session?.user.name} ,make someone happy by sendinng out gifts</p></div>
       <div className="flex flex-col items-center max-h-32">
         {availableItems.length > 0 ? (
           availableItems.map((item) => (
